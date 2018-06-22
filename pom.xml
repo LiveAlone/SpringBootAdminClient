@@ -18,7 +18,8 @@
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <java.version>1.8</java.version>
-        <spring.boot.version>2.0.2.RELEASE</spring.boot.version>
+        <spring.boot.version>1.5.2.RELEASE</spring.boot.version>
+        <spring.admin.version>1.5.0</spring.admin.version>
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>
     </properties>
@@ -26,16 +27,22 @@
     <dependencies>
 
         <dependency>
+            <groupId>de.codecentric</groupId>
+            <artifactId>spring-boot-admin-starter-client</artifactId>
+            <version>${spring.admin.version}</version>
+        </dependency>
+
+        <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter</artifactId>
             <version>${spring.boot.version}</version>
         </dependency>
 
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-test</artifactId>
-            <version>${spring.boot.version}</version>
-        </dependency>
+        <!--<dependency>-->
+            <!--<groupId>org.springframework.boot</groupId>-->
+            <!--<artifactId>spring-boot-starter-test</artifactId>-->
+            <!--<version>${spring.boot.version}</version>-->
+        <!--</dependency>-->
 
         <!--<dependency>-->
             <!--<groupId>org.springframework.boot</groupId>-->
@@ -54,6 +61,7 @@
         <!--<dependency>-->
             <!--<groupId>org.springframework.boot</groupId>-->
             <!--<artifactId>spring-boot-starter-actuator</artifactId>-->
+            <!--<version>${spring.boot.version}</version>-->
         <!--</dependency>-->
 
         <!--<dependency>-->
@@ -73,21 +81,6 @@
             <artifactId>spring-boot-starter-security</artifactId>
         </dependency>
         -->
-
-        <!-- lombok -->
-        <dependency>
-            <groupId>org.projectlombok</groupId>
-            <artifactId>lombok</artifactId>
-            <version>1.12.2</version>
-        </dependency>
-
-        <!-- guava -->
-        <dependency>
-            <groupId>com.google.guava</groupId>
-            <artifactId>guava</artifactId>
-            <version>18.0</version>
-        </dependency>
-
     </dependencies>
 
     <build>

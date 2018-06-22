@@ -3,3 +3,11 @@ logging:
     root: INFO
 server:
   port: 8888
+spring:
+  boot:
+    admin:
+      url: http://localhost:8080
+management:
+  security:
+    enabled: false
+
